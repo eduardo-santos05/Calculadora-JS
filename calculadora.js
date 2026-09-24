@@ -64,5 +64,8 @@ do {
             console.log('Saindo...')
             console.log('Até logo!')
             break
+        default:
+            console.log("Opção inválida! Digite '1', '2', '3', '4' ou '0'.")
+            break
     }
 } while(opcao !== '0')
