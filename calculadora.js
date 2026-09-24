@@ -14,15 +14,22 @@ function somar() {
 function subtrair() {
     let num1 = Number(prompt('Informe o primeiro número: '))
     let num2 = Number(prompt('Informe o segundo número: '))
-    let soma = num1 - num2
-    console.log(`${num1} - ${num2} = ${soma}`)
+    let subtracao = num1 - num2
+    console.log(`${num1} - ${num2} = ${subtracao}`)
 }
 
 function multiplicar() {
     let num1 = Number(prompt('Informe o primeiro número: '))
     let num2 = Number(prompt('Informe o segundo número: '))
-    let soma = num1 * num2
-    console.log(`${num1} * ${num2} = ${soma}`)
+    let multiplicacao = num1 * num2
+    console.log(`${num1} * ${num2} = ${multiplicacao}`)
+}
+
+function dividir() {
+    let num1 = Number(prompt('Informe o primeiro número: '))
+    let num2 = Number(prompt('Informe o segundo número: '))
+    let divisao = num1 / num2
+    console.log(`${num1} / ${num2} = ${divisao}`)
 }
 
 do {
@@ -43,6 +50,9 @@ do {
             break
         case '3':
             multiplicar()
+            break
+        case '4':
+            dividir()
             break
     }
 } while(opcao !== '0')
