@@ -11,6 +11,13 @@ function somar() {
     console.log(`${num1} + ${num2} = ${soma}`)
 }
 
+function subtrair() {
+    let num1 = Number(prompt('Informe o primeiro número: '))
+    let num2 = Number(prompt('Informe o segundo número: '))
+    let soma = num1 - num2
+    console.log(`${num1} - ${num2} = ${soma}`)
+}
+
 do {
     console.log('\n=== Calculadora ===')
     console.log('1. Soma')
@@ -23,6 +30,9 @@ do {
     switch (opcao) {
         case '1':
             somar()
+            break
+        case '2':
+            subtrair()
             break
     }
 } while(opcao !== '0')
