@@ -60,5 +60,9 @@ do {
         case '4':
             dividir()
             break
+        case '0':
+            console.log('Saindo...')
+            console.log('Até logo!')
+            break
     }
 } while(opcao !== '0')
