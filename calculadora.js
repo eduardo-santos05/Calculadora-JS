@@ -4,6 +4,13 @@ const prompt = PromptSync()
 
 let opcao = ''
 
+function somar() {
+    let num1 = Number(prompt('Informe o primeiro número: '))
+    let num2 = Number(prompt('Informe o segundo número: '))
+    let soma = num1 + num2
+    console.log(`${num1} + ${num2} = ${soma}`)
+}
+
 do {
     console.log('\n=== Calculadora ===')
     console.log('1. Soma')
@@ -12,4 +19,10 @@ do {
     console.log('4. Divisão')
     console.log('0. Sair')
     opcao = prompt('Escolha uma opção: ')
+
+    switch (opcao) {
+        case '1':
+            somar()
+            break
+    }
 } while(opcao !== '0')
