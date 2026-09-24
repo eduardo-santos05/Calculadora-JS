@@ -28,8 +28,14 @@ function multiplicar() {
 function dividir() {
     let num1 = Number(prompt('Informe o primeiro número: '))
     let num2 = Number(prompt('Informe o segundo número: '))
-    let divisao = num1 / num2
-    console.log(`${num1} / ${num2} = ${divisao}`)
+    if (num1 === 0 && num2 === 0) {
+        console.log('Valor indeterminado.')  
+    } else if (num1 !== 0 && num2 === 0) {
+        console.log('Não é possível dividir por 0.')
+    } else {
+        let divisao = num1 / num2
+        console.log(`${num1} / ${num2} = ${divisao}`)
+    }
 }
 
 do {
